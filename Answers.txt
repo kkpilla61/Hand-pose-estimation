@@ -1,1 +1,13 @@
-
+1. How many degrees of freedom does each joint have?
+Ans. Wrist: 2 
+     Thumb cmc: 2
+     Thumb mcp: 2
+     Thumb ip: 1
+     mcp of index, middle, ring and pinky fingers: 2
+     pip of index, middle, ring and pinky fingers: 1
+     dip of index, middle, ring and pinky fingers: 1
+2. Is there a way to compute the rotation matrices for each joint from their joint angles?
+Ans. DH parameters can be used to compute the rotation matrices of each joint and express the location of the tip of each finger with respect to the base coordinate frame
+3. How do we compute the length of each bone of the hand?
+Ans. Assuming that the camera is stationary, measure the height of an object in reality and compute the pixel height of the same object in a photograph taken by the camera. Calculate the ratio between the real object height and the pixel height. 
+Now, choose the corresponding vector of the bone, calculate the pixel distance of the entire vector and multiply it with the above ratio to get the bone length
